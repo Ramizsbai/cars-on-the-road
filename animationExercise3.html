@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+
+    <style>
+
+        body, html {
+
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;    
+            
+
+        }
+    
+    .sky .road .grass {
+
+        position: relative;
+
+    }
+
+    .sky {
+
+        height: 40vh;
+        width: 100%;
+        background: skyblue;
+
+    }
+
+
+    .road {
+        height: 30vh;
+        background: gray;
+    }
+
+
+    .line {
+
+        box-sizing: border-box;
+        border: 4px dashed #fff;
+        height: 0vh;
+        width: 100%;
+        position: absolute;
+        top: 55%;
+
+    }
+
+    .grass {
+
+        height: 30vh;
+        background: seagreen;
+
+    }
+
+    
+     .car1 {
+
+        animation-name: ss;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        width: 20vw;
+        position: absolute;
+        top: 17vw;
+        left: 0;
+
+    } 
+
+    .car2 {
+
+        width: 20vw;
+        position: absolute;
+        top: 30vw;
+        left: 0;
+       animation-name: ss;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: reverse;
+    }
+
+    .sky .cloud {
+
+        width: 10vw;    
+        position: absolute;
+
+    }
+
+    .cloud:nth-child(1){
+
+        width: 8vw;
+        top: 21vh;
+        opacity: 0.5;
+        animation: wind 80s linear infinite reverse; 
+    }
+
+    .cloud:nth-child(2) {
+
+        top: 0;
+        opacity: 0.6;
+        animation: wind 65s linear infinite reverse;
+    }
+
+    .cloud:nth-child(3) {
+
+        top: 14vh;
+        opacity: 0.6;
+        
+        animation: wind 55s linear infinite reverse;
+
+    }
+
+    .cloud:nth-child(4) {
+
+         width: 8vw;
+        top: 15vh;
+        opacity: 0.4;
+        animation: wind 70s linear infinite reverse; 
+     }
+
+        .cloud:nth-child(5) {
+
+        width: 8vw;
+        top: 9vh;
+        opacity: 0.6;
+        animation: wind 90s linear infinite reverse; 
+
+ }
+
+
+
+
+    
+
+    @keyframes ss{
+
+        from{
+
+            transform: translateX(-500px)
+
+        }
+        to{
+
+            transform: translateX(1500px)
+
+        }
+
+    }
+
+    @keyframes wind{
+
+        from{left: -300px}
+        to{left: 100%}
+
+    }
+
+    </style>
+
+<body>
+   
+        <div class="sky">
+            <img class="cloud" src="kisspng-cartoon-cloud-animation-clip-art-clouds-cartoon-5aac8b59bbf053.5612467615212573057698.png" alt="cloud">
+            <img class="cloud" src="kisspng-cartoon-cloud-animation-clip-art-clouds-cartoon-5aac8b59bbf053.5612467615212573057698.png" alt="cloud">
+            <img class="cloud" src="kisspng-cartoon-cloud-animation-clip-art-clouds-cartoon-5aac8b59bbf053.5612467615212573057698.png" alt="cloud">
+            <img class="cloud" src="kisspng-cartoon-cloud-animation-clip-art-clouds-cartoon-5aac8b59bbf053.5612467615212573057698.png" alt="cloud">
+            <img class="cloud" src="kisspng-cartoon-cloud-animation-clip-art-clouds-cartoon-5aac8b59bbf053.5612467615212573057698.png" alt="cloud">
+        </div>
+
+    <div class="road">
+    <img class="car1" src="car-animation.png" alt="car">
+    <img class="car2" src="car-animation-png-3.png" alt="car4">
+    </div>
+    <div class="line"></div>
+
+    <div class="grass"></div>
+
+
+</body>
+</html>
